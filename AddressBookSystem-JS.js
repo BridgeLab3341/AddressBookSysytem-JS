@@ -98,6 +98,16 @@ try{
     contact = new Contact(3,"Radha","Patil","Defg","KoLhapur","Maharashtra","416022","9359915712","radha@gmail.com");
     contactArray.push(contact);
     console.log(contactArray);
+
+    let editName = "Anil";
+    for(let item of contactArray)
+    {
+        if(item._firstname==editName)
+        {
+            item._firstname="Ram";
+        }
+    }
+    console.log(contactArray);
 }
 catch
 {
